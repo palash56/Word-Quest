@@ -1,0 +1,149 @@
+
+
+*
+{margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+    background-color:beige;
+}
+header{
+background-color:teal;
+padding:27px;
+color:#ffff;
+font-size:larger;
+
+}
+header h1{
+    font-size: 40px;
+    justify-content:center;
+    text-align: center;
+}
+main{
+    min-height: 54vh;
+    padding:20px;
+}
+ main form{
+    display:flex;
+    justify-content: center;
+}
+form input[type="text"]{
+    flex-grow: 1;
+}
+
+form button[type="submit"]{
+background-color:darkcyan;
+color:#ffff;
+cursor:pointer;
+
+}
+ form input[type="text"],button[type="submit"]{
+border:none;
+font-size: 20px;
+font-weight: 600;
+border-radius: 8px;
+padding:10px;
+margin-left: 12px;
+ }
+ footer{
+    background-color:blue;
+    padding:13px;
+    color:#ffff;
+    font-size: 20px;
+    text-align: center;
+    position:fixed; 
+    width:100%
+    
+ }
+.result p{
+margin-top:12px ;
+}
+.result{
+    background-color: #ffff;
+    padding:20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow:0px 0px 10px rgba(0,0,0,4);
+}
+
+.result p[class="partOfSpeech"]{
+    font-style: italic;
+    color:orangered;
+    margin-top: 8px;
+    font-size: 20px;
+} 
+.result p[class="Meaning"]{
+    color:blue;
+    font-style: bold;
+    font-size: 20px;
+
+}
+.result p[class="Example"]{
+    color:gray;
+    font-size: 20px;
+}
+.result p[class="Synonyms"]{
+    color:blueviolet;
+    font-size: 20px;
+
+
+}
+
+.result p[class="Phonetics"]{
+    color:crimson;
+    margin-left: 15px;
+font-size: 20px;
+
+}
+
+.result div{
+    margin-top: 20px;
+}
+.result div a{
+    background-color:teal;
+    border-radius: 6px;
+    padding:8px;
+    margin-top: 15px;
+    text-decoration: none;
+    color:#ffff;
+     font-size: 16px;
+}
+
+.result li{
+    padding:6px;
+    margin-left:20px;
+
+}
+@media screen and (max-width:320px){
+    main form{
+        flex-direction:column;
+       }
+       form button[type="submit"]{
+        margin-left: 0px;
+        margin-top: 10px;
+       }
+
+}
+.result  button{
+    border-radius: 5px;
+    background-color: teal;
+    color:#ffff;
+    padding:8px;
+    font-size: 16px;
+    outline: green;
+}
+ buttonDesign{
+    border-radius: 4px;
+ }
+ header h2{
+    margin-top: 10px;
+    color:red;
+    font-size:larger;
+    background-color:lightskyblue;
+    padding:15px;
+    margin-bottom: 0;
+    font-style: bold;
+ }
